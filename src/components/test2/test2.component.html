@@ -1,0 +1,38 @@
+<Header class="reg1">
+  <div class="row">
+    <div class="col-1">Welcome to XYZ.org</div>
+    <div class="col-8">Weclome to Regustration Page</div>
+  </div>
+</Header>
+
+<body>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <div>
+      <label>
+        Name:
+        <input formControlName="name" placeholder="Your name" />
+      </label>
+    </div>
+    <div>
+      <label>
+        Email:
+        <input formControlName="email" placeholder="Your email" />
+      </label>
+    </div>
+    <div>
+      <label>
+        Password:
+        <input formControlName="password" placeholder="Password" />
+      </label>
+    </div>
+    <div>
+      <label>
+        Message:
+        <input formControlName="message" placeholder="Your message" />
+      </label>
+    </div>
+    <button type="submit" click="onSubmit()">
+      <a routerLink="/LoginPage" routerLinkActive="Active"> Register</a>
+    </button>
+  </form>
+</body>

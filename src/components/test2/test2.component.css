@@ -1,0 +1,19 @@
+.reg1 {
+  background-color: green;
+}
+
+#m1 {
+  text-align: center;
+}
+
+.div1 {
+  box-sizing: content-box;
+  width: 500px;
+  height: 550px;
+  padding: 10px;
+  border: 5px solid gray;
+  text-align: center;
+
+  margin-left: 350px;
+  -moz-box-align: center;
+}
